@@ -179,8 +179,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-06 19:40:21</span>
-            <span class="mobile">2023-03-06 19:40</span>
+            <span class="pc">2023-03-06 19:52:15</span>
+            <span class="mobile">2023-03-06 19:52</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -209,12 +209,6 @@
 <p>We know trees have lots of branches and each branch will divide at some point into more branches. In a decision tree, a point that split branches is called a ‘node’. At each node, the computer will make a ‘Yes&#x2F;No’ decision based on certain criteria to categories data. Finally, with multiple nodes connected to each other, a tree could make conclusions in a way that a human would usually do.<br>For example, to identify squares from other shapes, a computer might develop the following decision tree from trail-error approach.</p>
 <p>We could see that the tree made a decision at each node based on its condition and deliver data to the next two nodes correspondingly. For instant, at the root node, the tree separates circles and eclipses from the collection; the group without corners will be considered as non-squares while the rest are still candidates for squares and will be further assessed. In this example, the decision tree could identify squares in x simple steps and the overall decision-making process is easy to understand and interpret.   </p>
 <h2 id="But…"><a href="#But…" class="headerlink" title="But…"></a>But…</h2><p>However, decision tree has its limitations when dealing with tricker scenarios. Say now you have four pictures, and only the first two pictures are cats. Imagine you are a computer with no knowledge towards animals, you might come up with the following tree to help you identify cats.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/IMG_6064.PNG"
-                      alt="Alt text"
-                ></p>
 <img  
                      lazyload
                      src="/images/loading.svg"
@@ -222,14 +216,23 @@
                        width="60%" height="60%"
                 >
 
-<p>Although the criteria seem unreasonable based on common sense, we can see that it could perfectly identify all the cats in the given pictures. However, if we want you to identify cats from two new pictures: a pure white cat and a tiger, this decision tree is no longer valid as it is too simple.<br><img  
+<p>Although the criteria seem unreasonable based on common sense, we can see that it could perfectly identify all the cats in the given pictures. However, if we want you to identify cats from two new pictures: a pure white cat and a tiger, this decision tree is no longer valid as it is too simple.</p>
+<img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/IMG_6065.PNG"
-                      alt="Alt text"
-                ></p>
+                       width="60%" height="60%"
+                >
+
+
 <p>Adding these two pictures to your knowledge, the decision could be updated by extending nodes and branches. </p>
-<p>![Alt text](“<a class="link"   target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/3" >https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/3 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> steps.png”)</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/3 steps.PNG"
+                       width="60%" height="60%"
+                >
+ 
 <p>This new tree can now successfully identify the tiger as ‘not cat’ and the white cat as ‘cat’, excellent! But what will happen if we provide you with a picture of a cat with solid black fur and yellow eyes? Looks like we can’t do anything but extend the tree again <br>If we keep considering more animals or various cat breeds, we will need further extend the tree to accurately distinguish cats from other similar animals. We might end up with a tree looks like this </p>
 <p>Even though we have similar number of steps to make a conclusion compared to the previous shape example, this decision tree is still having potential issue of identifying unseen pictures. If we keep extending the tree, it could become too complicated and having more unreasonable criteria with less generality. This situation is called overfit, where the decision tree perform so perfectly for the given dataset that if you provide it with a new one it might make wrong predictions. More importantly, a more complicated tree will take much long time to make a conclusion. </p>
 <h1 id="Random-Forest"><a href="#Random-Forest" class="headerlink" title="Random Forest"></a>Random Forest</h1><p>Instead of building one complicated decision tree with overwhelmed criteria, random forest, as it sounds like, creates many different decision trees, and utilized the power of collaboration to solve the problem. That has been said, we could divide a complicated scenario into multiple less tricky cases, and we generate a decision tree to solve only a few small problems. This is known as divide-and-conquer strategy. Therefore, each individual tree could still makes clear and straight-forward decisions as it is dealing with a rather simple problems, and the issue of complicated trees that has been mentioned above could be avoid. Even though each individual tree is not capable of dealing with the whole problem, but if trees work together, (i.e. form a forest), they could make a relatively reasonable conclusion by summarize the result of each individual tree, and the decision made by the majority of the trees would be elected as the final solution of the random forest. In this way, random forest can effectively reduce the risk of making a wrong decision based on only one tree’s imperfect algorithm.</p>
