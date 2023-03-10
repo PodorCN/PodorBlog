@@ -179,8 +179,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-09 23:14:27</span>
-            <span class="mobile">2023-03-09 23:14</span>
+            <span class="pc">2023-03-09 23:33:03</span>
+            <span class="mobile">2023-03-09 23:33</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -252,6 +252,13 @@ We could see that the tree made a decision at each node based on its condition a
  
 <p>This new tree can now successfully identify the tiger as ‘not cat’ and the white cat as ‘cat’, excellent! But what will happen if we provide you with a picture of a cat with solid black fur and yellow eyes? Looks like we can’t do anything but expand the tree again.</p>
 <p>If we keep considering more animals or various cat breeds, we will need further expand the tree to accurately distinguish cats from other similar animals. We might end up with a tree that looks like this：</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/WeChat Image_20230309233054.png"
+                       width="60%" height="60%"
+                >
+ 
 <p>Even though we already have an enormous decision tree, it still has potential issues when identifying unseen pictures. If the expansion goes on, the tree could derive plenty of unreasonable criteria with less generality. This situation is called overfitting, where the decision tree performs so perfectly only for the given dataset that if you provide it with a new one it will likely make wrong predictions. Furthermore, a complicated tree will take a longer time to make a conclusion.</p>
 <h1 id="Random-Forest"><a href="#Random-Forest" class="headerlink" title="Random Forest"></a>Random Forest</h1><p>Instead of building one complicated decision tree with overwhelming criteria, random forest, as it sounds like, creates many different decision trees, and utilizes the power of collaboration to solve the problem.<br>That being said, the computer will decompose a complex problem into a few similar, but simpler, subproblems and generate a decision tree for each subproblem. The conclusion will be derived by taking the majority of the decisions made by individual decision trees. In this way, the random forest can effectively resolve the overfitting issue mentioned above and can reduce the risk of making a wrong decision due to only one tree’s imperfect algorithm.</p>
 <h2 id="Why-random"><a href="#Why-random" class="headerlink" title="Why random?"></a>Why random?</h2><p>So why does it called “Random Forest”? Which part of the random forest is “random”? The randomness is actually from the step where we split the complex scenario into pieces. The computer will try different ways to split the problem and keep the splitting method that has the best performance.</p>
