@@ -179,8 +179,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-09 23:50:31</span>
-            <span class="mobile">2023-03-09 23:50</span>
+            <span class="pc">2023-03-09 23:52:20</span>
+            <span class="mobile">2023-03-09 23:52</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -263,14 +263,14 @@ We could see that the tree made a decision at each node based on its condition a
 <h1 id="Random-Forest"><a href="#Random-Forest" class="headerlink" title="Random Forest"></a>Random Forest</h1><p>Instead of building one complicated decision tree with overwhelming criteria, random forest, as it sounds like, creates many different decision trees, and utilizes the power of collaboration to solve the problem.<br>That being said, the computer will decompose a complex problem into a few similar, but simpler, subproblems and generate a decision tree for each subproblem. The conclusion will be derived by taking the majority of the decisions made by individual decision trees. In this way, the random forest can effectively resolve the overfitting issue mentioned above and can reduce the risk of making a wrong decision due to only one tree’s imperfect algorithm.<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/20230309233714.png"
+                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/20230309233714.jpg"
                        width="60%" height="60%"
                 ></p>
 <h2 id="Why-random"><a href="#Why-random" class="headerlink" title="Why random?"></a>Why random?</h2><p>So why does it called “Random Forest”? Which part of the random forest is “random”? The randomness is actually from the step where we split the complex scenario into pieces. The computer will try different ways to split the problem and keep the splitting method that has the best performance.</p>
 <h2 id="Example…"><a href="#Example…" class="headerlink" title="Example…?"></a>Example…?</h2><p>Back to our cats’ example, a computer may generate three trees: tree #1 learns how to distinguish cats based on their colour, tree #2 learns how to identify cats based on their body parts, and tree #3 learns to make decisions based on their faces. Let’s see what will happen if I provide the following picture to this random forest.<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/309234008.png"
+                     data-src="https://cdn.jsdelivr.net/gh/podorcn/PodorCDN@master/309234008.jpg"
                        width="30%" height="30%"
                 ><br>Tree #1 might give me the wrong conclusion, as the brown colour is also commonly seen among cats, but tree #2 might say that a cat does not have such a short tail and tree #3 might argue that a cat does not have such a long nose. Hence, by consulting all 3 trees, my random forest model will be able to give me the correct answer: it’s NOT a cat!</p>
 <h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>At this point, you have learned two popular machine-learning methods that have been widely used in different industries. I hope this post could spark your interest in data science and statistics. In the next post, we will talk about neural networks, a much more powerful and mysterious tool for prediction. Again, don’t be freaked out by the name! We will make sure to “divide and conquer” the problem!</p>
